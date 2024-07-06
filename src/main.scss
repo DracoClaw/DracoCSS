@@ -40,7 +40,10 @@
 }
 
 /*Message Edit Timestamp*/
-.cozyMessage_d5deea:not(.systemMessage_d5deea) .markup_d6076c .timestamp_ec86aa>[aria-label]::after {
+.cozyMessage_d5deea:not(.systemMessage_d5deea)
+  .markup_d6076c
+  .timestamp_ec86aa
+  > [aria-label]::after {
   content: "(" attr(aria-label) ")";
   text-transform: title;
   font-size: 0.625rem;
@@ -80,12 +83,12 @@
 }
 
 /*Blue Forum Unread Pill*/
-[class^="iconVisibility_"]:has([style="color: var(--text-brand);"])>[class^="unread_"] {
+[class^="iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread_"] {
   background-color: var(--text-brand);
 }
 
 /*Red Mention Unread Pill*/
-[class^="iconVisibility_"]:has([class^="mentionsBadge_"])>[class^="unread_"] {
+[class^="iconVisibility_"]:has([class^="mentionsBadge_"]) > [class^="unread_"] {
   background-color: var(--status-danger);
 }
 
@@ -130,7 +133,7 @@
 
 /*Windows Style Action Buttons*/
 #app-mount {
-  >div[class*="titleBar"] {
+  > div[class*="titleBar"] {
     display: grid;
     justify-content: right;
     grid-template-columns: min-content min-content min-content;
@@ -138,14 +141,14 @@
     height: 1.72rem;
     margin: 5px 0px 0px 0px;
 
-    >div[class*="winButton"] {
+    > div[class*="winButton"] {
       height: unset;
       display: grid;
       width: 2.9rem;
     }
   }
 
-  >div[class*="app"] {
+  > div[class*="app"] {
     margin-top: -0.18rem;
   }
 }
@@ -192,13 +195,19 @@
 }
 
 /*Hover VC Controls*/
-[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button) :not(:last-child) {
+[class^="panels-"]
+  [class^="container-"]:has([class*="withTagAsButton-"])
+  div:has(button)
+  :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.2s ease-in-out;
 }
 
-[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button):hover :not(:last-child) {
+[class^="panels-"]
+  [class^="container-"]:has([class*="withTagAsButton-"])
+  div:has(button):hover
+  :not(:last-child) {
   opacity: 100% !important;
   width: 32px;
 }
@@ -294,7 +303,7 @@
 
 /*Minimal Super Reactions*/
 [class^="message__"] div[aria-label*="super" i]:has([class^="icon__"]),
-[class^="reactButtons-"]>div[aria-label*="super" i],
+[class^="reactButtons-"] > div[aria-label*="super" i],
 [class^="reactionInner__"] [class^="effectsWrapper__"],
 [class^="burstReactionTooltipPrompt__"],
 [class^="burstEmojiSection__"],

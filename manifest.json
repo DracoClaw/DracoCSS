@@ -7,7 +7,7 @@
     "discordID": "341680387979870219",
     "github": "DracoClaw"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "updater": {
     "type": "github",
     "id": "DracoClaw/DracoCSS"
@@ -16,7 +16,5 @@
   "type": "replugged-theme",
   "main": "src/main.css",
   "source": "https://github.com/DracoClaw/DracoCSS",
-  "image": [
-    "https://i.imgur.com/14CNs3a.png?CHANGE-THIS-URL"
-  ]
+  "image": ["https://i.imgur.com/14CNs3a.png?CHANGE-THIS-URL"]
 }

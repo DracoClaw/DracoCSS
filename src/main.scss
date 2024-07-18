@@ -80,17 +80,17 @@
 }
 
 /*Blue Forum Unread Pill*/
-[class^="iconVisibility_"]:has([style="color: var(--text-brand);"])>[class^="unread_"] {
+.iconVisibility_f6f816:has([style="color: var(--text-brand);"])>.unread_d8bfb3 {
   background-color: var(--text-brand);
 }
 
 /*Red Mention Unread Pill*/
-[class^="iconVisibility_"]:has([class^="mentionsBadge_"])>[class^="unread_"] {
+.iconVisibility_f6f816:has(.mentionsBadge_e2a798)>.unread_d8bfb3 {
   background-color: var(--status-danger);
 }
 
 /* Unread pill in DMs list */
-[class*="privateChannels"] li:has([class*="highlighted"])::before {
+.privateChannels_f0963d li:has(.highlighted_f9647d)::before {
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -103,7 +103,7 @@
   transition: all 0.2s ease;
 }
 
-[class*="privateChannels"] li:has([class*="highlighted"]):hover::before {
+.privateChannels_f0963d li:has(.highlighted_f9647d):hover::before {
   height: 16px !important;
   top: calc(50% - 8px) !important;
 }
@@ -130,7 +130,7 @@
 
 /*Windows Style Action Buttons*/
 #app-mount {
-  >div[class*="titleBar"] {
+  >.titleBar_a934d8 {
     display: grid;
     justify-content: right;
     grid-template-columns: min-content min-content min-content;
@@ -138,15 +138,11 @@
     height: 1.72rem;
     margin: 5px 0px 0px 0px;
 
-    >div[class*="winButton"] {
+    >.winButton_a934d8 {
       height: unset;
       display: grid;
       width: 2.9rem;
     }
-  }
-
-  >div[class*="app"] {
-    margin-top: -0.18rem;
   }
 }
 
@@ -191,20 +187,29 @@
   width: 150px;
 }
 
-/*Hover VC Controls*/
-[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button) :not(:last-child) {
+/*Hide user panel buttons*/
+[class^="panels_"]>[class^="container_"]>[class^="avatarWrapper_"]+div> :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.2s ease-in-out;
 }
 
-[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button):hover :not(:last-child) {
+[class^="panels_"]>[class^="container_"]>[class^="avatarWrapper_"]+div:hover> :not(:last-child) {
   opacity: 100% !important;
   width: 32px;
 }
 
-[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button) {
-  margin-left: auto;
+[class^="panels_"]>[class^="container_"]>[class^="avatarWrapper_"] {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 0px;
+  min-width: 0px;
+}
+
+[class^="panels_"]>[class^="container_"]>[class^="avatarWrapper_"]+div {
+  flex-shrink: 1;
+  flex-grow: 0;
+  justify-content: flex-end;
 }
 
 /*Full Page Settings*/
@@ -293,36 +298,16 @@
 }
 
 /*Minimal Super Reactions*/
-[class^="message__"] div[aria-label*="super" i]:has([class^="icon__"]),
-[class^="reactButtons-"]>div[aria-label*="super" i],
-[class^="reactionInner__"] [class^="effectsWrapper__"],
-[class^="burstReactionTooltipPrompt__"],
-[class^="burstEmojiSection__"],
-[class*="colorPremiumGradient__"],
-button[id="super-reaction-picker-tab"],
-[class^="burstGlow__"] {
+.reactionInner_ec6b19 .effectsWrapper_e5651,
+.burstGlow_ec6b19 {
   display: none;
 }
 
-[class*="hideEmoji__"] {
+.hideEmoji_ec6b19 {
   opacity: 1;
 }
 
-[class*="burstReactionTooltipSpacer__"] {
-  border: none !important;
-  padding: 0px;
-  margin: 0px;
-}
-
-[class^="reactionSelected__"] {
-  background: var(--background-tertiary) !important;
-}
-
-[class^="reactionInner__"]:is([aria-label*=" super " i]) {
-  pointer-events: none;
-}
-
-[class*="shakeReaction__"] {
+.shakeReaction_ec6b19 {
   animation: none !important;
 }
 

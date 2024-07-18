@@ -1,5 +1,5 @@
 /*Timestamp Icon*/
-.timestamp_d6076c {
+.timestamp_f8f345 {
   border-radius: 7px;
   padding: 2.5px;
 
@@ -40,10 +40,7 @@
 }
 
 /*Message Edit Timestamp*/
-.cozyMessage_d5deea:not(.systemMessage_d5deea)
-  .markup_d6076c
-  .timestamp_ec86aa
-  > [aria-label]::after {
+.cozyMessage_d5deea:not(.systemMessage_d5deea) .markup_f8f345 .timestamp_f9f2ca>[aria-label]::after {
   content: "(" attr(aria-label) ")";
   text-transform: title;
   font-size: 0.625rem;
@@ -51,7 +48,7 @@
   line-height: 1;
 }
 
-.cozyMessage_d5deea:not(.systemMessage_d5deea) .markup_d6076c .timestamp_ec86aa .edited_ec86aa {
+.cozyMessage_d5deea:not(.systemMessage_d5deea) .markup_f8f345 .timestamp_f9f2ca .edited_f9f2ca {
   display: none;
 }
 
@@ -83,12 +80,12 @@
 }
 
 /*Blue Forum Unread Pill*/
-[class^="iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread_"] {
+[class^="iconVisibility_"]:has([style="color: var(--text-brand);"])>[class^="unread_"] {
   background-color: var(--text-brand);
 }
 
 /*Red Mention Unread Pill*/
-[class^="iconVisibility_"]:has([class^="mentionsBadge_"]) > [class^="unread_"] {
+[class^="iconVisibility_"]:has([class^="mentionsBadge_"])>[class^="unread_"] {
   background-color: var(--status-danger);
 }
 
@@ -133,7 +130,7 @@
 
 /*Windows Style Action Buttons*/
 #app-mount {
-  > div[class*="titleBar"] {
+  >div[class*="titleBar"] {
     display: grid;
     justify-content: right;
     grid-template-columns: min-content min-content min-content;
@@ -141,20 +138,20 @@
     height: 1.72rem;
     margin: 5px 0px 0px 0px;
 
-    > div[class*="winButton"] {
+    >div[class*="winButton"] {
       height: unset;
       display: grid;
       width: 2.9rem;
     }
   }
 
-  > div[class*="app"] {
+  >div[class*="app"] {
     margin-top: -0.18rem;
   }
 }
 
 /*Bottom Emoji Picker*/
-.sprite_af14ca {
+.sprite_d91a75 {
   background-position: -24px -24px !important;
 
   &:hover {
@@ -195,19 +192,13 @@
 }
 
 /*Hover VC Controls*/
-[class^="panels-"]
-  [class^="container-"]:has([class*="withTagAsButton-"])
-  div:has(button)
-  :not(:last-child) {
+[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button) :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.2s ease-in-out;
 }
 
-[class^="panels-"]
-  [class^="container-"]:has([class*="withTagAsButton-"])
-  div:has(button):hover
-  :not(:last-child) {
+[class^="panels-"] [class^="container-"]:has([class*="withTagAsButton-"]) div:has(button):hover :not(:last-child) {
   opacity: 100% !important;
   width: 32px;
 }
@@ -241,18 +232,18 @@
 }
 
 /*Bot Tag Icon*/
-.botTag_ec86aa:not(.stafftags):not(.botTagOP_e48ddb) {
+.botTag_f9f2ca:not(.stafftags):not(.botTagOP_e48ddb) {
   padding: 0 !important;
   background-color: transparent !important;
 }
 
-.botTagRegular_a02df3:not(.stafftags):not(.botTagOP_e48ddb) {
+.botTagRegular_a9e77f:not(.stafftags):not(.botTagOP_e48ddb) {
   padding: 0 !important;
   background-color: transparent !important;
 }
 
-.message_d5deea[data-is-author-bot="true"] .botTag_ec86aa::after,
-.member_a31c43 .botTag_a02df3::after {
+.message_d5deea[data-is-author-bot="true"] .botTag_f9f2ca::after,
+.member_a31c43 .botTag_a9e77f::after {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C14.761 2 17 4.238 17 7V9H7V7C7 4.238 9.238 2 12 2ZM10.5 5.5C10.5 6.329 11.172 7 12 7C12.828 7 13.5 6.329 13.5 5.5C13.5 4.671 12.828 4 12 4C11.172 4 10.5 4.671 10.5 5.5ZM23 22H17L19 19V12H17V18C17 18.553 16.552 19 16 19H14L15 22H9L10 19H8C7.448 19 7 18.553 7 18V12H5V19L7 22H1L3 19V12C3 10.896 3.897 10 5 10H19C20.103 10 21 10.896 21 12V19L23 22ZM13 14C13 14.553 13.448 15 14 15C14.552 15 15 14.553 15 14C15 13.447 14.552 13 14 13C13.448 13 13 13.447 13 14Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
   background-size: contain;
@@ -261,7 +252,7 @@
   height: 14px;
 }
 
-.message_d5deea[data-is-author-webhook="true"] .botTag_ec86aa::after {
+.message_d5deea[data-is-author-webhook="true"] .botTag_f9f2ca::after {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7.7 16.95 3.68-6.76a1 1 0 0 0-.5-1.4A3 3 0 1 1 15 6a1 1 0 1 0 2 0 5 5 0 1 0-7.85 4.1L5.95 16a2 2 0 1 0 1.78 3h8.54a2 2 0 1 0 0-2H7.73l-.02-.05Z M13.8 6.86A2 2 0 1 0 12.16 8l4.53 6.58a1 1 0 0 0 .82.43h.5a3 3 0 1 1-1.98 5.25 1 1 0 0 0-.66-.25h-.01a1 1 0 0 0-.66 1.75A4.98 4.98 0 0 0 23 18a5 5 0 0 0-4.97-5L13.8 6.86ZM5.97 13.88a1 1 0 0 1-.72 1.21 3 3 0 1 0 2.73 5.16 1 1 0 1 1 1.33 1.5A4.98 4.98 0 0 1 1 18a5 5 0 0 1 3.75-4.84 1 1 0 0 1 1.22.72Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
   background-size: contain;
@@ -270,8 +261,8 @@
   height: 14px;
 }
 
-.botTag_ec86aa:not(.stafftags):not(.botTagOP_e48ddb) span,
-.botText_a02df3 {
+.botTag_f9f2ca:not(.stafftags):not(.botTagOP_e48ddb) span,
+.botText_a9e77f {
   display: none;
 }
 
@@ -303,7 +294,7 @@
 
 /*Minimal Super Reactions*/
 [class^="message__"] div[aria-label*="super" i]:has([class^="icon__"]),
-[class^="reactButtons-"] > div[aria-label*="super" i],
+[class^="reactButtons-"]>div[aria-label*="super" i],
 [class^="reactionInner__"] [class^="effectsWrapper__"],
 [class^="burstReactionTooltipPrompt__"],
 [class^="burstEmojiSection__"],

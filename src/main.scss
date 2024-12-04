@@ -90,7 +90,7 @@
 }
 
 /* Unread pill in DMs list */
-.privateChannels_f0963d li:has(.highlighted_f9647d)::before {
+.privateChannels_f0963d li:has(.highlighted_ec8679)::before {
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -103,7 +103,7 @@
   transition: all 0.2s ease;
 }
 
-.privateChannels_f0963d li:has(.highlighted_f9647d):hover::before {
+.privateChannels_f0963d li:has(.highlighted_ec8679):hover::before {
   height: 16px !important;
   top: calc(50% - 8px) !important;
 }
@@ -272,7 +272,7 @@
 }
 
 /*Reveal Spoiler on Hover*/
-.spoilerMarkdownContent_a3d0f7:hover .obscuredTextContent_a3d0f7 span {
+.spoilerMarkdownContent_aa9639:hover .obscuredTextContent_aa9639 span {
   opacity: 1;
   background-color: #323232;
   border-radius: 3px;
@@ -315,10 +315,4 @@
 .clickableSticker_a1debe .assetWrapper_cb3343 {
   width: 80px !important;
   height: 80px !important;
-}
-
-/*Resize Platform Status Badges*/
-.profileBadge24_b64375 {
-  width: 18px !important;
-  height: 18px !important;
 }
